@@ -1,0 +1,160 @@
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+img, iframe, video{
+ max-width:100%;
+ vertical-align:bottom;
+}
+
+body{
+ background-color:#eee;
+ font-family:verdana;
+ font-style:normal;
+ font-size:16px;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+#headerContainer,#mainContainer, #footerContainer{
+ width: 100%;
+ background-color:#eee;
+}
+
+.actual{
+  color: yellow;
+}
+
+#headerContainer nav{
+ display: flex;
+ justify-content: space-between;
+ max-width:100%;
+ background-color:#333;
+ color:#fff;
+ 
+}
+
+#headerContainer nav h1{
+  padding: .5em 0;
+  width: 50%;
+  padding-left: 1em;
+}
+
+#headerContainer nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+  padding-right: 1em;
+  
+}
+#headerContainer nav ul li{
+  list-style-type: none;
+  text-align: center;
+  padding: .25em;
+  margin: 0 auto;
+}
+
+#headerContainer nav ul a:hover{
+  color: #999;
+  font-style: bold;
+  text-shadow: 0px;
+
+}
+#contentBanner{
+ 
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  position: relative;
+ 
+}
+
+#contentBanner h2{
+  margin-left: 4em;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  z-index: 9;
+  padding: 0 2em;
+}
+
+#contentBanner img{
+
+  width: 100%;
+  margin-left: .5em;
+  opacity: .5;
+  
+}
+
+#contentArticulos{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: colums;
+  text-align: center;
+  margin-top: 2em;
+  
+}
+
+#contentArticulos article{
+  padding: 1em;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+#contentArticulos p,h2{
+  padding-top: 1em;
+  width: 300px;
+
+}
+
+
+#contentArticulos img{
+  width: 300px;
+  padding-top: 1em;
+  border-radius:65px 65px 65px;
+  
+}
+
+#footerContainer{
+  
+  background-color: #333;
+  height: 3em;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2em;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#footerContainer span{
+  color: white;
+  
+}
+
+@media (max-width: 250px) {
+  
+  #headerContainer nav lu{
+    display: none;
+  }
+
+    #contentBanner h2{
+      font-size: 1em;
+    
+  }
+
+    
+  }
+  
